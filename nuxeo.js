@@ -29,6 +29,23 @@
       "NuxeoError": {
         
       },
+      "AuthOptions": {
+        "method": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "username": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "password": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        }
+      },
       "ClientOptions": {
         "baseURL": {
           "!type": "string",
@@ -37,6 +54,21 @@
         },
         "restPath": {
           "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "automationPath": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "auth": {
+          "!type": "AuthOptions",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "timeout": {
+          "!type": "number",
           "!doc": "TODO",
           "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
         }
@@ -57,10 +89,104 @@
             "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
           },
           "header": {
-            "!type": "fn(name: ?, value: ?)",
+            "!type": "fn(name: ?, value: ?) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "headers": {
+            "!type": "fn(headers: ?) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "timeout": {
+            "!type": "fn(timeout: number) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "repositoryName": {
+            "!type": "fn(repositoryName: string) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "schema": {
+            "!type": "fn(schema: ?) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "schemas": {
+            "!type": "fn(schemas: ?) -> !this",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "fetchOperationDefinitions": {
+            "!type": "fn(callback: fn(error: +NuxeoError, data: ?))",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "operation": {
+            "!type": "fn(id: ?)) -> +Operation",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "request": {
+            "!type": "fn(path: ?)) -> +Request",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "document": {
+            "!type": "fn(data: ?)) -> +Document",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "uploader": {
+            "!type": "fn(options: ?)) -> +Uploader",
             "!doc": "TODO",
             "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
           }
+        }
+      },
+      "OperationOptions": {
+        
+      },
+      "Operation": {
+        "!type": "fn(options?: OperationOptions)",
+        "!doc": "TODO",
+        "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client",
+        "prototype": {
+          
+        }
+      },
+      "RequestOptions": {
+        
+      },
+      "Request": {
+        "!type": "fn(options?: RequestOptions)",
+        "!doc": "TODO",
+        "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client",
+        "prototype": {
+          
+        }
+      },
+      "DocumentOptions": {
+        
+      },
+      "Document": {
+        "!type": "fn(options?: DocumentOptions)",
+        "!doc": "TODO",
+        "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client",
+        "prototype": {
+          
+        }
+      },
+      "UploaderOptions": {
+        
+      },
+      "Uploader": {
+        "!type": "fn(options?: UploaderOptions)",
+        "!doc": "TODO",
+        "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client",
+        "prototype": {
+          
         }
       }
     }
