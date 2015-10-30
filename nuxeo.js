@@ -26,10 +26,36 @@
   var defs = {
     "!name": "nuxeo",
     "!define": {
+      "NuxeoError": {
+        
+      },
+      "ClientOptions": {
+        "baseURL": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        },
+        "restPath": {
+          "!type": "string",
+          "!doc": "TODO",
+          "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+        }
+      },
       "Client": {
-        "!type": "fn()",
+        "!type": "fn(options?: ClientOptions)",
+        "!doc": "TODO",
+        "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client",
         "prototype": {
-          
+          "connect": {
+            "!type": "fn(callback: fn(error: +NuxeoError, client: !this))",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "connected": {
+            "!type": "bool",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          }
         }
       }
     }
