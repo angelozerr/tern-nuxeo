@@ -55,6 +55,11 @@
             "!type": "bool",
             "!doc": "TODO",
             "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
+          },
+          "header": {
+            "!type": "fn(name: ?, value: ?)",
+            "!doc": "TODO",
+            "!url": "https://doc.nuxeo.com/display/NXDOC/JavaScript+Client"
           }
         }
       }
